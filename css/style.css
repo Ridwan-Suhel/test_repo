@@ -1,0 +1,159 @@
+/*
+  Theme Name: HTML Template
+  Author: Ridwan Suhel
+  Support: ridwansuhel96@gmail.com
+  Description: Creative  HTML5 template.
+  Version: 1.0
+*/
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans:300,400,600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* html {
+    font-size: 62.5%;
+} */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+/* .container {
+    width: 65%;
+    margin: auto;
+} */
+
+
+
+
+
+a {
+    text-decoration: none;
+}
+
+a {
+    font-size: 1.6rem;
+}
+
+/*======================== 
+universel areaend here
+=========================*/
+
+
+/*===========portfolio section start here===============*/
+.portfolio_section {
+    padding: 100px 0 120px 0;
+}
+
+.portfolio_section .port_box_wrapper {
+    width: 100%;
+    /* display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; */
+    box-sizing: border-box;
+}
+.portfolio_section .port_box_wrapper .port_box {
+    position: relative;
+    margin: .5% .5%;
+    cursor: pointer;
+    overflow: hidden;
+    /* width: 32%; */
+    box-sizing: border-box;
+}
+
+.portfolio_section .port_box_wrapper .port_box img {
+    display: block;
+    width: 100%;
+
+}
+
+.portfolio_section .port_box_wrapper .port_box .hover_icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #24efe59c;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .4s ease-in-out;
+    transform: translateX(-100%);
+}
+
+.portfolio_section .port_box_wrapper .port_box .hover_icon i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: #fff;
+    transition: .7s ease-in-out;
+    opacity: 0;
+}
+
+.portfolio_section .port_box_wrapper .port_box:hover .hover_icon {
+    opacity: 1;
+    transform: translateX(0%);
+
+}
+
+.portfolio_section .port_box_wrapper .port_box:hover .hover_icon i {
+    opacity: 1;
+}
+
+
+.owl-carousel .owl-nav .owl-next, .owl-carousel .owl-nav .owl-prev {
+    font-size: 30px;
+    outline: none;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    color: rgb(7, 4, 209);
+    margin: 0px 20px;
+}
+.owl-carousel .owl-nav .owl-next{
+    right: 0px;
+    left: inherit;
+} 
+/*===========portfolio section end here===============*/
+
+
+.property_head .pro_title{
+    padding: 10px 5px;
+    color: #fff;
+    background: #293C62; 
+}
+
+.property_head .pro_bar{
+    padding: 10px 5px;
+    color: #fff;
+    background: #638AD8; 
+}
+
+.property_head .pro_bar ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 5px;
+}
+.property_head .pro_bar ul li{
+    width: 50%;
+}
